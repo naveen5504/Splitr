@@ -71,7 +71,7 @@ export function GroupBalances({ balances }) {
           }`}
         >
           {me.totalBalance > 0
-            ? `+$${me.totalBalance.toFixed(2)}`
+            ? `+${me.totalBalance.toFixed(2)}`
             : me.totalBalance < 0
               ? `-$${Math.abs(me.totalBalance).toFixed(2)}`
               : "$0.00"}
@@ -114,7 +114,7 @@ export function GroupBalances({ balances }) {
                       <span className="text-sm">{member.name}</span>
                     </div>
                     <span className="font-medium text-green-600">
-                      ${member.amount.toFixed(2)}
+                      ₹{member.amount.toFixed(2)}
                     </span>
                   </div>
                 ))}
